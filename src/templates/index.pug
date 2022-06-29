@@ -1,0 +1,17 @@
+block variables
+
+doctype html
+html(lang="ru-RU")
+  head
+    meta(charset="utf-8")
+    title #{title}
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
+    script(src="./js/DrawSVGPlugin.min.js")
+  body(class=pageClass)
+    .svg-sprite
+      include ../assets/sprites/sprite.svg
+    .main-wrapper
+      block content
+    script(src="js/jquery.min.js")
